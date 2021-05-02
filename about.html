@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8fc21c09fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="button-up">
+		<i class="fas fa-arrow-alt-circle-up"></i>
+	</div>
+	<div class="auth-overlay"></div>
+	<div class="authorization-completed-successful">
+		<h2 class="authorization-completed-title">authorization is successfully completed</h2>
+	</div>
+	<div class="registration-completed-successful">
+		<h2 class="registration-completed-title">Registration is successfully completed</h2>
+	</div>
+	<aside class="authorization">
+		<div class="auth-top">
+			<h2 class="auth-title">account</h2>
+			<hr class="auth-title-hr">
+			<div class="auth-close__btn">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<hr class="auth-top-hr">
+		<div class="auth-inner">
+			<div class="auth-login">
+				<h3 class="auth-form__title" id="auth-login-btn">I already have an account</h3>
+				<form class="auth-form-login active" id="auth-login-form">
+					<div class="auth-form__item">
+						<label for="auth-login-email">Email</label>
+						<input class="auth-form-input" type="email" id="auth-login-email" placeholder="example@esterox.am">
+					</div>
+					<div class="auth-form__item">
+						<label for="auth-login-pass">Password</label>
+						<input class="auth-form-input" type="password" id="auth-login-pass" placeholder="●●●●●●●●●●">
+						<div class="password-eye"><i class="fas fa-eye-slash password-eye-icon"></i></div>
+					</div>
+					<div class="auth-form__item checkbox">
+						<div class="remember-checkbox">
+							<input class="remember-check" id="remember-check" type="checkbox">
+							<label for="remember-check">Remember me</label>
+						</div>
+						<a href=""> Fortgot your password? </a>
+					</div>
+					<p class="danger-message login">incorrect email or password</p>
+					<div class="auth-form__item submit-btn">
+						<button type="submit" id="login-submit-btn">Sign in</button>
+					</div>
+				</form>
+			</div>
+			<div class="auth-registr">
+				<h3 class="auth-form__title" id="auth-registr-btn">I don’t have an account</h3>
+				<form class="auth-form-registr" id="auth-registr-form">
+					<div class="auth-form__item auth-form-item__hint">
+						<label for="auth-reg-email">Email</label>
+						<input class="auth-form-input" type="email" id="auth-reg-email" placeholder="example@esterox.am">
+						<div class="auth-item__req-hint">
+							<p>Your active email</p>
+						</div>
+					</div>
+					<div class="auth-form__item auth-form-item__hint">
+						<label for="auth-reg-pass">Password</label>
+						<input class="auth-form-input" type="password" id="auth-reg-pass" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+						<div class="password-eye"><i class="fas fa-eye-slash password-eye-icon"></i></div>
+						<div class="auth-item__req-hint">
+							<p>Enter a combination of at least six numbers(maximum 16), letters and punctuation marks (like ! and &).</p>
+						</div>
+					</div>
+					<div class="auth-form__item auth-form-item__hint">
+						<label for="auth-reg-confirm__pass">Confirm Password</label>
+						<input class="auth-form-input" type="password" id="auth-reg-confirm__pass" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+						<div class="password-eye"><i class="fas fa-eye-slash password-eye-icon"></i></div>
+						<div class="auth-item__req-hint">
+							<p>Write your password one more time</p>
+						</div>
+					</div>
+					<div class="auth-form__item auth-form-item__hint">
+						<label for="auth-reg-name">Full Name</label>
+						<input class="auth-form-input" type="text" id="auth-reg-name" placeholder="John Smith">
+						<div class="auth-item__req-hint">
+							<p>Your Name and Surname</p>
+						</div>
+					</div>
+					<div class="auth-form__item">
+						<label for="auth-reg-phone">Phone <span>(Optional)</span></label>
+						<input class="auth-form-input" type="number" id="auth-reg-phone" placeholder="(+374) 12-345-678">
+					</div>
+					<div class="auth-form__item agreement">
+						<input class="agreement-check" id="agreement-check" type="checkbox">
+						<label for="agreement-check">I agree that Wapik may collect my personal information for marketing purposes (newsletters, news and promotions)</label>
+					</div>
+					<p class="danger-message registr">Something is wrong, please check the fields</p>
+					<div class="auth-form__item submit-btn">
+						<button type="submit" id="registr-submit-btn">Create an account</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</aside>
+	<header class="header about-page">
+		<div class="header-fixed">
+			<div class="container">
+				<div class="header-top">
+					<div class="header-top__left">
+						<div class="header-logo"><a href="index.html">Wapik</a></div>
+						<hr class="header-top-hr">
+						<a class="header-top__phone" href="tel:+62 202 555 0117">
+							<i class="fas fa-phone"></i><span>+62 202 555 0117</span>
+						</a>
+					</div>
+					<div class="header-top__right">
+						<nav class="header-nav">
+							<ul class="header-nav__list">
+								<li class="header-nav__link"><a href="index.html">home</a></li>
+								<li class="header-nav__link"><a href="about.html" class="active">about us</a></li>
+								<li class="header-nav__link"><a href="pricing.html">pricing</a></li>
+								<li class="header-nav__link"><a href="contact.html">contact us</a></li>
+								<li class="header-nav__link"><a href="animation.html">animation</a></li>
+							</ul>
+						</nav>
+						<div class="header-top__right-btn" id="auth-btn">
+							<a class="btn" href="#">login</a>
+						</div>
+						<!-- burger menu -->
+						<div class="burger-menu">
+							<div class="burger"></div>
+						</div>
+						<!-- overlay -->
+						<div class="overlay">
+							<!-- burger menu content-->
+							<div class="burger-menu-content">
+								<div class="burger-menu-content__inner">
+									<div class="header-top__left">
+										<div class="header-logo mobile"><a href="index.html">Wapik</a></div>
+										<hr class="header-top-hr mobile">
+										<a class="header-top__phone mobile" href="tel:+62 202 555 0117">
+											<i class="fas fa-phone"></i><span>+62 202 555 0117</span>
+										</a>
+									</div>
+									<nav class="header-nav mobile">
+										<ul class="header-nav__list">
+											<li class="header-nav__link"><a href="index.html">home</a></li>
+											<li class="header-nav__link"><a href="about.html" class="active">about us</a></li>
+											<li class="header-nav__link"><a href="pricing.html">pricing</a></li>
+											<li class="header-nav__link"><a href="contact.html">contact us</a></li>
+											<li class="header-nav__link"><a href="animation.html">animation</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="header-hr">
+			</div>
+		</div>
+		<div class="container">
+			<div class="header-about__content">
+				<h1 class="header-about__title anim-item anim-no-effect">Cras justo odio, dapibus ac facilisis in egestas eget quam</h1>
+				<div class="header-content__btn header-about__btn anim-item anim-no-effect"><a class="btn" href="#">Start Your Free Trial</a></div>
+			</div>
+		</div>
+	</header>
+	<section class="features about-page">
+		<div class="container">
+			<div class="section-headline features-headline">
+				<h2 class="section-title anim-item anim-no-effect">About Us</h2>
+				<hr class="section-hr anim-item anim-no-effect">
+				<p class="section-subtitle about-section-subtitle anim-item anim-no-effect">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
+			</div>
+			<div class="features-main">
+				<div class="features-main__item anim-item anim-no-effect">
+					<div class="features-main__item-logo"><img src="img/features/1.png" alt="featureslogo"></div>
+					<h3 class="features-main__title features-title">Ionicons</h3>
+					<p class="features-main__para features-para">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
+				</div>
+				<div class="features-main__item anim-item anim-no-effect">
+					<div class="features-main__item-logo"><img src="img/features/2.png" alt="featureslogo"></div>
+					<h3 class="features-main__title features-title">Creative Design</h3>
+					<p class="features-main__para features-para">Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+				</div>
+				<div class="features-main__item anim-item anim-no-effect">
+					<div class="features-main__item-logo"><img src="img/features/3.png" alt="featureslogo"></div>
+					<h3 class="features-main__title features-title">Photoshop and Sketch</h3>
+					<p class="features-main__para features-para">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="team-person__more-overlay"></div>
+	<section class="team">
+		<div class="container">
+			<div class="section-headline features-headline anim-item anim-no-effect">
+				<h2 class="section-title">Meet Our Team</h2>
+				<hr class="section-hr">
+				<p class="section-subtitle about-section-subtitle">Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			</div>
+			<div class="team-inner">
+				<div class="team-person">
+					<div class="team-person__inner anim-item anim-no-effect">
+						<div class="team-person__photo">
+							<img src="img/team/1.png" alt="">
+							<div class="team-person__photo-hover"><i class="fas fa-search team-more__btn"></i></div>
+						</div>
+						<h4 class="team-person__title">Joyce Hudson</h4>
+						<p class="team-person__profession">Founder & Designer</p>
+					</div>
+					<div class="team-person__more-info">
+						<div class="team-more__close-btn"><i class="fas fa-window-close team-more-close__btn"></i></div>
+						<div class="team-modal-more__info">
+							<h3 class="team-person__more-title">Joyce Hudson</h3>
+							<p class="team-person__more-para">Founder & Designer with over 5 years of experience, Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis suscipit provident reiciendis modi, tempora repudiandae soluta ipsum nemo inventore fugiat quidem dicta doloribus. Iure.</p>
+							<div class="team-person__more-speech">
+								<div class="team-speech-title">Favourite Quote</div>
+								<p class="team-speech__inner">If you want something you've never had you must be willing to do something you've never done.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-person">
+					<div class="team-person__inner anim-item anim-no-effect">
+						<div class="team-person__photo">
+							<img src="img/team/2.png" alt="">
+							<div class="team-person__photo-hover"><i class="fas fa-search team-more__btn"></i></div>
+						</div>
+						<h4 class="team-person__title">Angela Campbell</h4>
+						<p class="team-person__profession">Project Manager</p>
+					</div>
+					<div class="team-person__more-info">
+						<div class="team-more__close-btn"><i class="fas fa-window-close team-more-close__btn"></i></div>
+						<div class="team-modal-more__info">
+							<h3 class="team-person__more-title">Angela Campbell</h3>
+							<p class="team-person__more-para">Project Manager with over 7 years of experience, Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis suscipit provident reiciendis modi, tempora repudiandae soluta ipsum nemo inventore fugiat quidem dicta doloribus. Iure.</p>
+							<div class="team-person__more-speech">
+								<div class="team-speech-title">Favourite Quote</div>
+								<p class="team-speech__inner">You can either experience the pain of discipline or the pain of regret. The choice is yours.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-person">
+					<div class="team-person__inner anim-item anim-no-effect">
+						<div class="team-person__photo">
+							<img src="img/team/3.png" alt="">
+							<div class="team-person__photo-hover"><i class="fas fa-search team-more__btn"></i></div>
+						</div>
+						<h4 class="team-person__title">James Walker</h4>
+						<p class="team-person__profession">Developer</p>
+					</div>
+					<div class="team-person__more-info">
+						<div class="team-more__close-btn"><i class="fas fa-window-close team-more-close__btn"></i></div>
+						<div class="team-modal-more__info">
+							<h3 class="team-person__more-title">James Walker</h3>
+							<p class="team-person__more-para">Front-End Developer with over 3 years of experience, Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis suscipit provident reiciendis modi, tempora repudiandae soluta ipsum nemo inventore fugiat quidem dicta doloribus. Iure.</p>
+							<div class="team-person__more-speech">
+								<div class="team-speech-title">Favourite Quote</div>
+								<p class="team-speech__inner">You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="download about-page">
+		<div class="container">
+			<div class="download-inner">
+				<div class="download-info anim-item anim-no-effect">
+					<h2 class="download-title about-page">Do You Like Wapik? Download it Now</h2>
+					<p class="download-para about-page">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				</div>
+				<div class="download-btn about-page anim-item anim-no-effect">
+					<a class="btn" href="#">download now! - FREE forever</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-inner">
+				<ul class="footer-inner-item anim-item anim-no-effect">
+					<li class="footer-item footer-logo"><a href="index.html">wapik</a></li>
+					<li class="footer-item">@: <a class="site-link" href="mailto:hi@wapik.com">hi@wapik.com</a></li>
+					<li class="footer-item">p: +62 202 555 0117</li>
+					<li class="footer-item">a: 610 Overlook Circle Suite 323 <br> Kalamazoo, MI 49009</li>
+				</ul>
+				<ul class="footer-inner-item anim-item anim-no-effect">
+					<li class="footer-title">Company</li>
+					<li class="footer-item"><a href="index.html">Home</a></li>
+					<li class="footer-item"><a href="about.html">About Us</a></span></li>
+					<li class="footer-item"><a href="pricing.html">Pricing</a></li>
+					<li class="footer-item"><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<ul class="footer-inner-item anim-item anim-no-effect">
+					<li class="footer-title">Others</li>
+					<li class="footer-item"><a href="#">Help & Support</a></li>
+					<li class="footer-item"><a href="#">Privacy Policy</a></span></li>
+					<li class="footer-item"><a href="#">Terms</a></li>
+					<li class="footer-item"><a href="#">Sitemap</a></li>
+				</ul>
+				<ul class="footer-inner-item anim-item anim-no-effect">
+					<li class="footer-title">Newsletter</li>
+					<li class="footer-item">Subscribe to our newsletter and get all the cool news</li>
+					<li class="footer-form">
+						<form class="footer-form-inner">
+							<div class="footer-form__item"><input required type="email" placeholder="Enter Email"></div>
+							<div class="footer-form__item footer-form-submit"><button type="submit">
+									<img src="img/icons/submit.png" alt="">
+								</button></div>
+						</form>
+					</li>
+				</ul>
+			</div>
+			<hr class="footer-hr">
+			<div class="footer-bottom">
+				<p class="footer-copyright">All rights reserved 2015.</p>
+				<ul class="footer-list">
+					<li class="footer-list__item"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li class="footer-list__item"><a href="https://fb.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="footer-list__item"><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li class="footer-list__item"><a href="https://dribbble.com/" target="_blank"><i class="fas fa-basketball-ball"></i></a></li>
+					<li class="footer-list__item"><a href="https://github.com/" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

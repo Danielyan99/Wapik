@@ -1,0 +1,107 @@
+.race {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 620px;
+	padding: 15px 0;
+	position: relative;
+}
+.animation-play {
+	margin-bottom: 25px;
+}
+.race-members {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 136px;
+  left: 157px;
+}
+.leopard {
+	background: url('../img/race/leopard.png');
+	width: 250px;
+	height: 100px;
+	animation: leopard 1s steps(7) infinite;
+	animation-direction: reverse;
+	margin-right: 150px;
+	animation-play-state: paused ;
+}
+@keyframes leopard {
+	100% {
+		background-position:  -100%, 0;
+	}
+}
+
+.man {
+	background: url('../img/race/man.png');
+	width: calc(720px / 6);
+	height: 195px;
+	animation: man 1s steps(5) infinite;
+	animation-play-state: paused;
+	animation-direction: reverse;
+}
+@keyframes man {
+	100% {
+		background-position:  -100%, 0;
+	}
+} 
+
+.forest {
+	background: url('../img/race/forest.jpg');
+	width: 100%;
+	height: 600px;
+	background-size: contain;
+	position: absolute;
+	z-index: -1;
+	animation: forest 1s linear infinite;
+	animation-direction: reverse;
+	animation-play-state: paused;
+}
+@keyframes forest {
+	100% {
+		background-position: 100% 0;
+	}
+}
+
+.bird {
+	width: 130px;
+	height: 120px;
+	background: url('../img/race/bird.png');
+	animation: bird 1s steps(13) infinite;
+	position: absolute;
+  top: -140%;
+  left: -20%;
+	animation-play-state: paused;
+}
+@keyframes bird {
+	100% {
+		background-position: 100% 0;
+	}
+}
+.bird.sec {
+	top: -135%;
+  left: 20%;
+}
+.bird.third {
+	top: -120%;
+	left: 0;
+}
+
+.run {
+	animation-play-state: running;
+}
+.animation-play {
+	padding: 40px 0 0 40px;
+}
+.animation-play button{
+	width: 250px;
+	height: 60px;
+	background-color: #407a7c;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #fff;
+	font-size: 16px;
+	transition: all .4s linear;
+}
+.animation-play button:hover {
+	background-color: rgb(111, 176, 72);
+}
+

@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'proxima';
+	font-weight: 700;
+	src: url('../fonts/proxima/proxima.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'proxima';
+	font-weight: 700;
+	src: url('../fonts/proxima/proxima.eot') format('eot');
+}
+@font-face {
+	font-family: 'proxima';
+	font-weight: 700;
+	src: url('../fonts/proxima/proxima.woff') format('woff');
+}
+@font-face {
+	font-family: 'proxima';
+	font-weight: 700;
+	src: url('../fonts/proxima/proxima.woff2') format('woff2');
+}
